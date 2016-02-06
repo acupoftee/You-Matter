@@ -68,7 +68,7 @@ def filter_tweets(tweets_, users_):
     while True:
         tweet_ = tweets_.pop(0)
         text = tweet_.text
-        if len(tweets_) == 0:
+        if len(tweets) == 0:
             return
         if not (hasattr(tweet_, "retweeted status") or
                 tweet_.in_reply_to_status_id or
