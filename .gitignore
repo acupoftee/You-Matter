@@ -57,6 +57,7 @@ docs/_build/
 
 secrets.py
 tweeted_users.py
+.idea/
 
 # PyBuilder
 target/
