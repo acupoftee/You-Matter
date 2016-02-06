@@ -20,11 +20,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import os
+import re
 import tweepy
 from secrets import *
 from random import choice
-import os
-import re
 
 # gets the location of the python script and creates the textfile that logs tweeted users
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))) 
