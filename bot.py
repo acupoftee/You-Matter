@@ -79,7 +79,7 @@ def filter_tweets(tweets_, users_):
 def send_reply(api_, type_, tweet_):
     """Send the reply tweet and record it."""
     f = open(tweeted_file, 'a')
-    f.write('@' + tweet_.author.screen_name + '\n')
+    f.write(tweet_.author.screen_name + '\n')
     f.close()
     text = '@' + tweet_.author.screen_name + ' ' + choice(data[type_]['responses'])
     api_.update_status(text, in_reply_to_status_id=tweet_.id_str)
