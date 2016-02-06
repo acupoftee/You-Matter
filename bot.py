@@ -26,6 +26,7 @@ from random import choice
 import os
 import re
 
+# gets the location of the python script and creates the textfile that logs tweeted users
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))) 
 tweeted_file = os.path.join(__location__, "tweeted_users.txt")
 
