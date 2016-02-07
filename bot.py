@@ -71,7 +71,7 @@ def filter_tweets(tweets_, users_):
         text = tweet_.text
         if len(tweets) == 0:
             return
-        if not (hasattr(tweet_, "retweeted status") or
+        if not (hasattr(tweet_, 'retweeted_status') or
                 tweet_.in_reply_to_status_id or
                 tweet_.author.screen_name in users_ or
                 any(substr in text.lower() for substr in filters)):
