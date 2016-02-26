@@ -48,7 +48,7 @@ filters = [
     'http', '#nowplaying', 'youtube', '-', '"', u'“', u'”', 'poor boy',
     'the way you do', 'hear it every day', 'that\'s ok', 'thats ok',
     'nobody loves me better', 'better than you', 'you\'re so fine',
-    '*'
+    '*', "B.B. King"
     ]
 
 
