@@ -91,12 +91,16 @@ if __name__ == "__main__":
     auth.set_access_token(A_TOKEN, A_TOKEN_SECRET)
     api = tweepy.API(auth)
 
-    tweet_type = choice(data.keys())
+    while True:
+        tweet_type = choice(data.keys())
 
-    tweets = get_tweet(api, tweet_type)
-    users = get_users()
-    tweet = filter_tweets(tweets, users)
-    send_reply(api, tweet_type, tweet)
+        tweets = get_tweet(api, tweet_type)
+        users = get_users()
+        tweet = filter_tweets(tweets, users)
+        send_reply(api, tweet_type, tweet)
+        time.sleep(600000)
+
+
         
 
 
