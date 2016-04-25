@@ -98,7 +98,7 @@ if __name__ == "__main__":
         users = get_users()
         tweet = filter_tweets(tweets, users)
         send_reply(api, tweet_type, tweet)
-        time.sleep(600000)
+        time.sleep(600)
 
 
         
