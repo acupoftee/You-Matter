@@ -91,6 +91,7 @@ if __name__ == "__main__":
     auth.set_access_token(A_TOKEN, A_TOKEN_SECRET)
     api = tweepy.API(auth)
 
+    #If your system can execute cronjobs, omit while loop and timer
     while True:
         tweet_type = choice(data.keys())
 
