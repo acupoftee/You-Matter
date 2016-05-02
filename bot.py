@@ -31,13 +31,13 @@ __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file
 tweeted_file = os.path.join(__location__, "tweeted_users.txt")
 
 # dictionary of tweets to search for and appropriate responses
-data = {'like':
+data = {'text':
             {'queries': ['"nobody likes me"',
                          '"nobody loves me"'],
              'responses': ['I like you.',
                            'You mean something to someone.',
-                           'You matter.',
-                           'You are valued.',
+                           'You matter to someone.',
+                           'You are valued by someone.',
                            'You\'re awesome. Never forget it.',
                            u'\u2764']
              }
